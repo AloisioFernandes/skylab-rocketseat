@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <div id="app">
+        <input id="nome" />        
+    </div>
+
+    <script>
+        let linkElement = document.createElement('a')
+        linkElement.setAttribute('href', 'http://rocketseat.com.br')
+        linkElement.setAttribute('title', 'Site da Rocketseat')
+
+        let textElement = document.createTextNode('Acessar site RocketSeat')
+        linkElement.appendChild(textElement)
+
+        let containerElement = document.querySelector('#app')
+        containerElement.appendChild(linkElement)
+
+        let inputElement = document.querySelector('#nome')
+        containerElement.removeChild(inputElement)
+    </script>
+</body>
+</html>
